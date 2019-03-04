@@ -1,0 +1,99 @@
+@import '~antd/dist/antd.css';
+
+
+.body-container{
+	height:100vh;
+	width:100vw;
+	transition-duration: 1s;
+}
+
+.consult-input{
+	width:auto;
+}
+
+.consult-btn{
+	background-color: #722ed1;
+	color:#fff;
+	border-color: #722ed1;
+	outline-color: #722ed1;
+}
+
+.consult-btn:hover{
+	color: #722ed1;
+	background-color:#fff;
+	border-color: #722ed1;
+}
+
+.consult-btn:focus{
+	color: #722ed1;
+	background-color:#fff;
+	border-color: #722ed1;
+	outline-color: #722ed1;
+}
+
+
+
+.container{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	height:auto;
+	width:auto;
+	padding: 20px;
+	background-color: #fff;
+	border:1px solid grey;
+}
+
+.upload-container{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.result-container{
+	margin-top: 20px;
+	height:auto;
+}
+
+.no-result{
+	background-color: #bfbfbf;
+	color:#fff;
+	font-size: 40px;
+	display: flex;
+	padding:30px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px; 
+}
+
+.normal-result{
+	background-color: #52c41a;
+	color:#fff;
+	font-size: 40px;
+	display: flex;
+	padding:30px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;  
+}
+
+.abnormal-result{
+	background-color: #f5222d;
+	color:#fff;
+	font-size: 40px;
+	display: flex;
+	padding:30px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;  
+}
+
+.pic-icon{
+	cursor: pointer;
+	font-size: 200px;
+	color:grey;
+	opacity: 0.5;
+}
