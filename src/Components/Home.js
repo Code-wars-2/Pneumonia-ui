@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Card , Row , Col , Upload , Icon , message , Input , Button } from 'antd';
 import axios from 'axios';
 
+const BASE_URL = "https://localhost:8000"
+const CONSULT = BASE_URL + "/pneumonia/"
 
 class Home extends Component {
   constructor(props){
@@ -24,7 +26,7 @@ class Home extends Component {
       this.setState({
         loading:true
       })
-      axios.post("https://28d9c79e.ngrok.io/pneumonia/" , JSON.stringify(path) )
+      axios.post(CONSULT , JSON.stringify(path) )
       .then(response => {
         console.log(response)
         this.setState({
